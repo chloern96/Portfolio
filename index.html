@@ -16,139 +16,156 @@
 			<div class="profil container-fluid">
 				<h1 class="navbar-brand" href="#">Chloé Reyne</h1>
 				<ul>
-					<li>Portrait</li>
-					<li>Mariage</li>
-					<li>Naissance</li>
-					<li>Contact</li>
+					<li><button type="button" class="btn btn-link" style="color: #000; text-decoration:none ">Portrait</button></li>
+					<li><button type="button" class="btn btn-link" style="color: #000; text-decoration:none ">Grossesse</button></li>
+					<li><button type="button" class="btn btn-link" style="color: #000; text-decoration:none ">Mariage</button></li>
+					<li><button type="button" class="btn btn-link" style="color: #000; text-decoration:none ">Naissance</button></li>
+					<li>
+						<div class="dropdown dropstart"> 
+							<button type="button" class="btn btn-primary dropdown-toggle" style="border: 0; background-color: transparent; color: #000; font-family: 'Noto Sans JP', sans-serif;" data-bs-toggle="dropdown" aria-expanded="false" data-bs-close="outside">Contact</button>
+							<form class="dropdown-menu p-4"  style="width: 300px;">
+								<div class="mb-3">
+									<label for="exampleDropdownFormEmail2" class="form-label">Votre email</label>
+									<input type="email" class="form-control" id="exampleDropdownFormEmail2" placeholder="email@example.com">
+								</div>
+								<div class="mb-3">
+									<label for="exampleDropdownFormMessage2" class="form-label">Votre message</label>
+									<input type="message" class="form-control" id="exampleDropdownForMessage2" placeholder="Message" style="height: 100px;">
+								</div>
+								<button type="submit" class="btn btn-primary">Envoyer</button>
+							</form>
+						</div>
+					</li>
 				</ul>
 			</div>
-			
 		</nav>
 
-		<section class="container-fluid">
-
-			<header class="aboutme">
+		<header class="aboutme">
 				<h1>Photographe à Bordeaux</h1>
 				<h2>ABOUT ME</h2>
-				<p>Passionnée de photo....</p>
-			</header>
+				<p class="shadow p-3 mb-5 bg-body rounded">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor. Cras elementum ultrices diam. Maecenas ligula massa, varius a, semper congue, euismod non, mi. Proin porttitor, orci nec nonummy molestie, enim est eleifend mi, non fermentum diam nisl sit amet erat. Ut in risus volutpat libero pharetra tempor. </p>
+		</header>
+
+		<section class="container-fluid" style="width: 90%;">
 
 			<h1 class="real">Réalisations</h1>
 
-				<div class="row" style="margin-bottom: 50px;">
-					<div id="carouselDark" class="col-6 carousel carousel-dark slide" data-bs-ride="carousel" >
-						<div class="carousel-indicators">
-							<button type="button" data-bs-target="#carouselDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-							<button type="button" data-bs-target="#carouselDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
-							<button type="button" data-bs-target="#carouselDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
-						</div>
-						<div class="carousel-inner">
-							<div class="carousel-item active" data-bs-interval="10000">
-								<img src="img/portrait2.jpg" class="rounded mx-auto d-block w-75" alt="portrait">
-								<div class="carousel-caption d-none d-md-block">
-									<p class="dates">Février 2019</p>
-								</div>
-							</div>
-							<div class="carousel-item active" data-bs-interval="2000">
-								<img src="img/portrait1.jpg" class="rounded mx-auto d-block w-75 "  alt="portrait">
-								<div class="carousel-caption d-none d-md-block">
-									<p class="dates">Avril 2022</p>
-								</div>	
-							</div>
-							<div class="carousel-item">
-								<img src="img/portrait3.jpg" class="rounded mx-auto d-block w-75 "  alt="portrait">
-								<div class="carousel-caption d-none d-md-block">
-									<p class="dates">Mars 2019</p>
-								</div>
+			<div class="row" style="margin-bottom: 50px;">
+				<div id="carouselDark" class="col-6 carousel carousel-dark slide" data-bs-ride="carousel" >
+					<div class="carousel-indicators">
+						<button type="button" data-bs-target="#carouselDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+						<button type="button" data-bs-target="#carouselDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+						<button type="button" data-bs-target="#carouselDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+					</div>
+					<div class="carousel-inner">
+						<div class="carousel-item active" data-bs-interval="10000">
+							<img src="img/portrait2.jpg" class="rounded mx-auto d-block w-75" alt="portrait">
+							<div class="carousel-caption d-none d-md-block">
+								<p class="dates">Février 2019</p>
 							</div>
 						</div>
-							<button class="carousel-control-prev" type="button" data-bs-target="#carouselDark" data-bs-slide="prev">
+						<div class="carousel-item active" data-bs-interval="2000">
+							<img src="img/portrait1.jpg" class="rounded mx-auto d-block w-75 "  alt="portrait">
+							<div class="carousel-caption d-none d-md-block">
+								<p class="dates">Avril 2022</p>
+							</div>	
+						</div>
+						<div class="carousel-item">
+							<img src="img/portrait3.jpg" class="rounded mx-auto d-block w-75 "  alt="portrait">
+							<div class="carousel-caption d-none d-md-block">
+								<p class="dates">Mars 2019</p>
+							</div>
+						</div>
+					</div>
+						<button class="carousel-control-prev" type="button" data-bs-target="#carouselDark" data-bs-slide="prev">
+						<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+						<span class="visually-hidden">Previous</span>
+						</button>
+						<button class="carousel-control-next" type="button" data-bs-target="#carouselDark" data-bs-slide="next">
+						<span class="carousel-control-next-icon" aria-hidden="true"></span>
+						<span class="visually-hidden">Next</span>
+						</button>
+				</div>
+			
+				<div id="carouselDeux" class="col-6 carousel carousel-dark slide" data-bs-ride="carousel" >
+					<div class="carousel-indicators">
+						<button type="button" data-bs-target="#carouselDeux" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+						<button type="button" data-bs-target="#carouselDeux" data-bs-slide-to="1" aria-label="Slide 2"></button>
+						<button type="button" data-bs-target="#carouselDeux" data-bs-slide-to="2" aria-label="Slide 3"></button>
+					</div>
+					<div class="carousel-inner">
+						<div class="carousel-item active" data-bs-interval="10000">
+							<img src="img/grossesse1.jpg" class="rounded mx-auto d-block w-75" alt="portrait">
+							<div class="carousel-caption d-none d-md-block">
+								<p class="dates">Février 2019</p>
+							</div>
+						</div>
+						<div class="carousel-item active" data-bs-interval="2000">
+							<img src="img/grossesse2.jpg" class="rounded mx-auto d-block w-75 "  alt="portrait">
+							<div class="carousel-caption d-none d-md-block">
+								<p class="dates">Avril 2022</p>
+							</div>	
+						</div>
+						<div class="carousel-item">
+							<img src="img/grossesse3.jpg" class="rounded mx-auto d-block w-75 "  alt="portrait">
+							<div class="carousel-caption d-none d-md-block">
+								<p class="dates">Mars 2019</p>
+							</div>
+						</div>
+					</div>
+						<button class="carousel-control-prev" type="button" data-bs-target="#carouselDeux" data-bs-slide="prev">
+						<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+						<span class="visually-hidden">Previous</span>
+						</button>
+						<button class="carousel-control-next" type="button" data-bs-target="#carouselDeux" data-bs-slide="next">
+						<span class="carousel-control-next-icon" aria-hidden="true"></span>
+						<span class="visually-hidden">Next</span>
+						</button>
+				</div>
+			</div>
+
+
+			<div class="row" style="margin-bottom: 50px;">
+				<div id="carouselFade" class="col-6 carousel slide carousel-fade" data-bs-ride="carousel">
+					<div class="carousel-inner">
+						<div class="carousel-item active">
+							<img src="img/bébé1.jpeg" class="rounded mx-auto d-block w-100" alt="Adriel">
+						</div>
+						<div class="carousel-item">
+							<img src="img/bébé2.jpeg" class="rounded mx-auto d-block w-100" alt="Adriel">
+						</div>
+					</div>
+						<button class="carousel-control-prev" type="button" data-bs-target="#carouselFade" data-bs-slide="prev">
 							<span class="carousel-control-prev-icon" aria-hidden="true"></span>
 							<span class="visually-hidden">Previous</span>
-							</button>
-							<button class="carousel-control-next" type="button" data-bs-target="#carouselDark" data-bs-slide="next">
+						</button>
+						<button class="carousel-control-next" type="button" data-bs-target="#carouselFade" data-bs-slide="next">
 							<span class="carousel-control-next-icon" aria-hidden="true"></span>
 							<span class="visually-hidden">Next</span>
-							</button>
+						</button>
+				</div>
+
+				<div id="carouselCinq" class="col-6 carousel slide carousel-fade" data-bs-ride="carousel">
+					<div class="carousel-inner">
+						<div class="carousel-item active">
+							<img src="img/mariage1.jpeg" class="rounded mx-auto d-block w-100" alt="Virginie">
+						</div>
+						<div class="carousel-item">
+							<img src="img/mariage2.jpeg" class="rounded mx-auto d-block w-100" alt="Virginie">
+						</div>
 					</div>
-				
-					<div id="carouselDeux" class="col-6 carousel carousel-dark slide" data-bs-ride="carousel" >
-						<div class="carousel-indicators">
-							<button type="button" data-bs-target="#carouselDeux" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-							<button type="button" data-bs-target="#carouselDeux" data-bs-slide-to="1" aria-label="Slide 2"></button>
-							<button type="button" data-bs-target="#carouselDeux" data-bs-slide-to="2" aria-label="Slide 3"></button>
-						</div>
-						<div class="carousel-inner">
-							<div class="carousel-item active" data-bs-interval="10000">
-								<img src="img/grossesse1.jpg" class="rounded mx-auto d-block w-75" alt="portrait">
-								<div class="carousel-caption d-none d-md-block">
-									<p class="dates">Février 2019</p>
-								</div>
-							</div>
-							<div class="carousel-item active" data-bs-interval="2000">
-								<img src="img/grossesse2.jpg" class="rounded mx-auto d-block w-75 "  alt="portrait">
-								<div class="carousel-caption d-none d-md-block">
-									<p class="dates">Avril 2022</p>
-								</div>	
-							</div>
-							<div class="carousel-item">
-								<img src="img/grossesse3.jpg" class="rounded mx-auto d-block w-75 "  alt="portrait">
-								<div class="carousel-caption d-none d-md-block">
-									<p class="dates">Mars 2019</p>
-								</div>
-							</div>
-						</div>
-							<button class="carousel-control-prev" type="button" data-bs-target="#carouselDeux" data-bs-slide="prev">
+						<button class="carousel-control-prev" type="button" data-bs-target="#carouselCinq" data-bs-slide="prev">
 							<span class="carousel-control-prev-icon" aria-hidden="true"></span>
 							<span class="visually-hidden">Previous</span>
-							</button>
-							<button class="carousel-control-next" type="button" data-bs-target="#carouselDeux" data-bs-slide="next">
+						</button>
+						<button class="carousel-control-next" type="button" data-bs-target="#carouselCinq" data-bs-slide="next">
 							<span class="carousel-control-next-icon" aria-hidden="true"></span>
 							<span class="visually-hidden">Next</span>
-							</button>
-					</div>
-				</div>
+						</button>
+				</div>	
+			</div>
 
 
-				<div class="row">
-					<div id="carouselFade" class="col-6 carousel slide carousel-fade" data-bs-ride="carousel">
-						<div class="carousel-inner">
-							<div class="carousel-item active">
-								<img src="img/bébé1.jpeg" class="rounded mx-auto d-block w-100" alt="Adriel">
-							</div>
-							<div class="carousel-item">
-								<img src="img/bébé2.jpeg" class="rounded mx-auto d-block w-100" alt="Adriel">
-							</div>
-						</div>
-							<button class="carousel-control-prev" type="button" data-bs-target="#carouselFade" data-bs-slide="prev">
-								<span class="carousel-control-prev-icon" aria-hidden="true"></span>
-								<span class="visually-hidden">Previous</span>
-							</button>
-							<button class="carousel-control-next" type="button" data-bs-target="#carouselFade" data-bs-slide="next">
-								<span class="carousel-control-next-icon" aria-hidden="true"></span>
-								<span class="visually-hidden">Next</span>
-							</button>
-					</div>
-
-					<div id="carouselCinq" class="col-6 carousel slide carousel-fade" data-bs-ride="carousel">
-						<div class="carousel-inner">
-							<div class="carousel-item active">
-								<img src="img/mariage1.jpeg" class="rounded mx-auto d-block w-100" alt="Virginie">
-							</div>
-							<div class="carousel-item">
-								<img src="img/mariage2.jpeg" class="rounded mx-auto d-block w-100" alt="Virginie">
-							</div>
-						</div>
-							<button class="carousel-control-prev" type="button" data-bs-target="#carouselCinq" data-bs-slide="prev">
-								<span class="carousel-control-prev-icon" aria-hidden="true"></span>
-								<span class="visually-hidden">Previous</span>
-							</button>
-							<button class="carousel-control-next" type="button" data-bs-target="#carouselCinq" data-bs-slide="next">
-								<span class="carousel-control-next-icon" aria-hidden="true"></span>
-								<span class="visually-hidden">Next</span>
-							</button>
-					</div>	
-				</div>
 		</section>
 
 		<footer>
@@ -167,7 +184,7 @@
 			</div>
 		</footer> 
 
-		 
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 	</body>
 	
 </html>

@@ -33,22 +33,22 @@ nav ul li:hover {
 	border-bottom-color: #000;
 }
 
-
 .aboutme {
-	margin-top: 5%;
+	margin-top: 8%;
+	margin-bottom: 6%;
 	max-width: 100%;
 }
 .aboutme h1{
-	display: flex;
-	justify-content: right;
+	text-align: end;
+	margin-left: 70%;
 }
 .aboutme h2{
-	display: flex;
-	justify-content: right;
+	text-align: end;
+	margin-left: 75%;
 }
 .aboutme p{
-	display: flex;
-	justify-content: right;
+	text-align: justify;
+	margin-left: 75%;
 }
 
 .real {
