@@ -55,7 +55,9 @@ nav ul li:hover {
 	font-family: 'Oswald', sans-serif;
 	text-transform: uppercase;
 	font-size: 3vw;
+	margin-bottom: 50px;
 }
+
 
 .dates {
 	font-size: 13px;
