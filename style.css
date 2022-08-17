@@ -2,41 +2,64 @@
 
 body {
 	font-family: 'Noto Sans JP', sans-serif;
-	padding: 0 2%;
 	margin: 0;
+	width: 100%;
 	background-color: #fdfdfd;
 }
 
-nav {
+
+.navbar {
 	display: flex;
 	flex-wrap: wrap;
-	justify-content: space-between;
+	justify-content: space-around;
 	align-items: center;
 	position: sticky;
 	top: 0;
 }
-nav .profil h1 {
+
+.profil h1 {
 	margin-left: 10px;
 	font-size: 15px;
     font-style: italic;
+	margin-right: 50%;
 }
-nav ul {
+
+.tabs {
 	display: flex;
 	list-style-type: none;
-}
-nav ul li {
+} 
+
+
+.tabs li {
 	margin-left: 20px;
 	cursor: pointer;
 	border-bottom: 1px solid rgb(212, 211, 211);
+	display: flex;
+	align-items:baseline ;
 }
-nav ul li:hover {
+
+.tabs a{
+	text-decoration: none;
+	color: #000;
+}
+
+.navbar ul li:hover {
 	border-bottom-color: #000;
 }
+
+.tab-content{
+	display: none;
+}
+
+.tab-content.active{
+	display: block;
+}
+
 
 .aboutme {
 	margin-top: 8%;
 	margin-bottom: 6%;
-	max-width: 100%;
+	max-width: 95%;
 }
 .aboutme h1{
 	text-align: end;
@@ -56,12 +79,15 @@ nav ul li:hover {
 	text-transform: uppercase;
 	font-size: 3vw;
 	margin-bottom: 50px;
+	margin-left: 5%;
+	display: flex;
+	justify-content: left;
 }
 
 
 .dates {
 	font-size: 13px;
-	color: rgb(145, 145, 145);
+	color: white;
 }
 
 
@@ -77,6 +103,16 @@ footer {
 footer .colonne p {
 	font-size: 12px;
 	color: #ccc;
+}
+
+footer a{
+	text-decoration: none;
+	color: #fdfdfd;
+}
+
+.colonne{
+	display: flex;
+	flex-direction: column;
 }
 
 /*@media screen and (max-width: 700px) {
